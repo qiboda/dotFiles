@@ -1,0 +1,18 @@
+# system
+# 打开一个输入命令的输入框
+alt + F2
+
+# 切换虚拟桌面
+win + pageup / win + pagedown
+
+# 移动当前应用到另一个虚拟桌面
+win + shift + pageup / win + shift + pagedown
+
+# 锁定桌面
+win + l
+
+# 打开关机, 重启对话框
+ctrl + alt + del
+
+# 打开消息盒
+win + m

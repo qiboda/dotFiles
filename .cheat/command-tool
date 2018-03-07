@@ -1,0 +1,26 @@
+cheat: 一个便签，保存相关内容到文件，便于查看。
+cppman: cpp文档查看工具，使用cppreference.com/cplusplus.com网站的内容，c++11/14。
+jq: json文件处理以及格式化显示，支持高亮。
+shellcheck：shell脚本静态检查工具，能够识别语法错误以及不规范的写法。
+axel：多线程下载工具，下载文件时可以替代curl、wget。
+cloc：代码统计工具，能够统计代码的空行数、注释行、编程语言。
+ccache：高速C/C++编译缓存工具，反复编译内核非常有用。
+icdiff：分屏显示diff。
+tldr: 一个简化的man手册。
+figlet: 将输入字符转换成艺术字体。
+Graphviz: 可以将文本转成图表。
+Pandoc: 可以将markdown转成各式各样的格式：PDF、DOCX、EPUB、MOBI。
+httpie: 命令行的http客户端。
+htop: 好用、好看的进程管理器。
+theFuck: 智能纠错工具。
+trash-cli：一套命令集，用作shell下的回收站。
+fzf：文件快速搜索。
+ranger：带 Vim 模式的文件管理器。
+rsync：增量文件传输。(远程文件[夹]传输)
+proxychains：可以在交互式 shell 中使用 proxy。fedora is proxychains-ng,and command name is proxychains4。
+grep->ack->ag->rg: 同一类工具，查找在指定的文件/目录内包含指定字符的行/文件，强大程度从左到右。
+tcpdump: 抓包工具。
+xtum: 终端复用器。
+fakeroot: 模拟root用户去维护文件。(用于需要root才能运行的命令)例如下面的aline命令。
+wmctrl: 窗口控制器
+alien: deb和rpm包之间转换。

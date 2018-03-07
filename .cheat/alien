@@ -1,0 +1,2 @@
+# to rpm
+alien -rc file.deb

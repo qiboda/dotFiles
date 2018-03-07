@@ -1,0 +1,3 @@
+'kill' process by id
+'pkill' process by process name
+'killall' all processes by exact process name

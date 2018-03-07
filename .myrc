@@ -1,0 +1,50 @@
+################################################################################
+# This file is a common shell configure for bash and zsh
+################################################################################
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+export PATH=$PATH:$HOME/app/clion-2017.3.3/bin:$HOME/app/pycharm-2017.3.3/bin:$HOME/.vim/plugged/YCM-Generator:$HOME/app/cmd_markdown_linux64
+
+# open urxvt with full screen, but now can work use fullscreen ext in urxvt.
+#[[ $TERM == *"rxvt"* ]] && wmctrl -r :ACTIVE: -b add,fullscreen
+
+# open nvim when open terminal
+# $EDITOR=nvim 
+
+################################################################################
+# Cheat config
+################################################################################
+
+export CHEAT_EDITOR=nvim
+
+################################################################################
+# Clang config
+################################################################################
+# CPATH is include path list for c and c++ and so on
+export CPATH=$HOME/.local/include/c_cpp
+# Only for c include
+export C_INCLUDE_PATH=$HOME/.local/include/cpp
+# Only for c++ include
+export CPLUS_INCLUDE_PATH=$HOME/.local/include/c
+
+export LIBRARY_PATH=$HOME/.local/lib
+
+###############################################################################
+# All aliases
+###############################################################################
+alias rm=trash
+alias la='ls -a'
+alias cls=clear
+
+alias py3=python3
+alias py=python3
+alias pip=pip3
+
+alias vim=nvim
+alias vi=nvim
+
+# alias for executing binary file
+alias uncrustify='uncrustify -c ~/.uncrustify.cfg'
+alias cmd_markdown='Cmd\ Markdown >>/tmp/cmd_markdown 2>&1 &'
