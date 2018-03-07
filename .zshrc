@@ -98,3 +98,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+
+# Solve zsh can't use end and home keys when using xshell
+# but can't use home and end in vim
+bindkey "\033[1~" beginning-of-line
+bindkey "\033[4~" end-of-line
