@@ -9,6 +9,8 @@
 !/.zshrc
 !/.gitconfig
 !/.gitignore
+!/.README
+!/.LICENSE
 
 !/.urxvt
 /.urxvt/*
