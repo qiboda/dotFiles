@@ -5,7 +5,7 @@
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-export PATH=$PATH:$HOME/app/clion-2017.3.3/bin:$HOME/app/pycharm-2017.3.3/bin:$HOME/.vim/plugged/YCM-Generator:$HOME/app/cmd_markdown_linux64
+export PATH=$PATH:$HOME/app/clion-2017.3.3/bin:$HOME/.vim/plugged/YCM-Generator
 
 # open urxvt with full screen, but now can work use fullscreen ext in urxvt.
 #[[ $TERM == *"rxvt"* ]] && wmctrl -r :ACTIVE: -b add,fullscreen
