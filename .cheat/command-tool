@@ -3,6 +3,7 @@ cppman: cpp文档查看工具，使用cppreference.com/cplusplus.com网站的内
 jq: json文件处理以及格式化显示，支持高亮。
 shellcheck：shell脚本静态检查工具，能够识别语法错误以及不规范的写法。
 axel：多线程下载工具，下载文件时可以替代curl、wget。
+aria2: many formats
 cloc：代码统计工具，能够统计代码的空行数、注释行、编程语言。
 ccache：高速C/C++编译缓存工具，反复编译内核非常有用。
 icdiff：分屏显示diff。
@@ -22,5 +23,7 @@ grep->ack->ag->rg: 同一类工具，查找在指定的文件/目录内包含指
 tcpdump: 抓包工具。
 xtum: 终端复用器。
 fakeroot: 模拟root用户去维护文件。(用于需要root才能运行的命令)例如下面的aline命令。
-wmctrl: 窗口控制器
+wmctrl: 窗口控制器。
 alien: deb和rpm包之间转换。
+ydcv: 有道词典命令行版。
+gzrc: 修复tar.gz压缩错误的压缩包。
