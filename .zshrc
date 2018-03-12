@@ -65,7 +65,7 @@ ZSH_THEME=simple
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-autosuggestions
+  autojump
 )
 
 source $ZSH/oh-my-zsh.sh
