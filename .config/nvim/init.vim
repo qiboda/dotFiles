@@ -41,6 +41,8 @@ set mouse=n
 let mapleader = ","
 
 nnoremap <C-L> :nohls<Enter>
+nnoremap <Up> gk
+nnoremap <Down> gj
 nnoremap <F2> :w<Enter>:te ydcv <cword><Enter>i
 
 " set no suffix and including '#include' file filetype to cpp
