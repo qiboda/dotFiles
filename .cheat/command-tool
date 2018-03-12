@@ -27,3 +27,4 @@ wmctrl: 窗口控制器。
 alien: deb和rpm包之间转换。
 ydcv: 有道词典命令行版。
 gzrc: 修复tar.gz压缩错误的压缩包。
+iconv: 文件编码转换。
