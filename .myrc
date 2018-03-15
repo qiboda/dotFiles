@@ -10,8 +10,11 @@ export PATH=$PATH:$HOME/bin:$HOME/.vim/plugged/YCM-Generator
 # open urxvt with full screen, but now can work use fullscreen ext in urxvt.
 #[[ $TERM == *"rxvt"* ]] && wmctrl -r :ACTIVE: -b add,fullscreen
 
+# Used to edit makepkg configure file for arch user repository
+export VISUAL=nvim
+
 # open nvim when open terminal
-# $EDITOR=nvim 
+#$EDITOR=nvim
 
 ################################################################################
 # Cheat config
