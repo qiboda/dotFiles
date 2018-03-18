@@ -30,3 +30,5 @@ gzrc: 修复tar.gz压缩错误的压缩包。
 iconv: 文件编码转换。
 doc2unix: 转换windows换行符到linux的换行符。
 youtube-dl: 网站视频下载器。
+ntfs-3g: 支持访问ntfs文件系统。
+glewinfo: 查看系统对opengl的支持情况。
