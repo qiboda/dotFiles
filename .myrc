@@ -47,7 +47,3 @@ alias pip=pip3
 
 alias vim=nvim
 alias vi=nvim
-
-# alias for executing binary file
-alias uncrustify='uncrustify -c ~/.uncrustify.cfg'
-alias cmd_markdown='Cmd\ Markdown >>/tmp/cmd_markdown 2>&1 &'
