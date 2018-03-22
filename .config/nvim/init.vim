@@ -35,7 +35,7 @@ set number
 set relativenumber
 
 " mouse
-set mouse=n
+set mouse=a
 
 " set <leader> to ,
 let mapleader = ","
@@ -89,7 +89,7 @@ let g:ycm_global_ycm_extra_conf = $HOME.'/.vim/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_completion = 1
 
 " subcommand
-nnoremap <leader>jt :YcmCompleter GoTo<CR>
+nnoremap <leader>gt :YcmCompleter GoTo<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " auto-formatter
