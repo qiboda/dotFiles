@@ -7,6 +7,8 @@
 
 export PATH=$PATH:$HOME/bin:$HOME/.vim/plugged/YCM-Generator
 
+export all_proxy=""
+
 # open urxvt with full screen, but now can work use fullscreen ext in urxvt.
 #[[ $TERM == *"rxvt"* ]] && wmctrl -r :ACTIVE: -b add,fullscreen
 
