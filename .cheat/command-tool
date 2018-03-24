@@ -34,3 +34,5 @@ ntfs-3g: 支持访问ntfs文件系统。
 glewinfo: 查看系统对opengl的支持情况。
 visualinfo: 与glewinfo类似，但也包括了驱动和显示器的信息。同样来自于glew库。
 p7zip: 解压、压缩7z文件。
+eog: 图片查看工具（eye of gnome）。
+feh: 图片查看工具。
