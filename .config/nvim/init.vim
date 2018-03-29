@@ -21,6 +21,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
 
+Plug 'mattn/gist-vim'
+
 " Initialize plugin system
 call plug#end()
 
@@ -90,6 +92,7 @@ let g:ycm_autoclose_preview_window_after_completion = 1
 
 " subcommand
 nnoremap <leader>gt :YcmCompleter GoTo<CR>
+nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " auto-formatter
