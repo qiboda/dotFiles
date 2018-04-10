@@ -23,6 +23,8 @@ Plug 'easymotion/vim-easymotion'
 
 Plug 'mattn/gist-vim'
 
+Plug 'scrooloose/nerdcommenter'
+
 " Initialize plugin system
 call plug#end()
 
