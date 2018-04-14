@@ -26,13 +26,14 @@ export CHEAT_EDITOR=nvim
 # Clang config
 ################################################################################
 # CPATH is include path list for c and c++ and so on
-export CPATH=$HOME/.local/include/c_cpp
+export CPATH=$HOME/.local/include
 # Only for c include
-export C_INCLUDE_PATH=$HOME/.local/include/cpp
+export C_INCLUDE_PATH=$HOME/.local/include/c
 # Only for c++ include
-export CPLUS_INCLUDE_PATH=$HOME/.local/include/c
+export CPLUS_INCLUDE_PATH=$HOME/.local/include/cpp
 
-export LIBRARY_PATH=$HOME/.local/lib
+export LIBRARY_PATH=$LIBRARY_PATH:$HOME/.local/lib
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
 
 ###############################################################################
 # All aliases
