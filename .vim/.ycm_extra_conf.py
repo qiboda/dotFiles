@@ -38,6 +38,22 @@ flags = [
     'c++',
     '-std=c++14',
     '-stdlib=libc++',
+    '-I',
+    '/home/qiboda/.local/include/c',
+    '-I',
+    '/home/qiboda/.local/include/cpp',
+    '-I',
+    '/include',
+    '-I',
+    '/home/qiboda/.local/include',
+    '-I',
+    '/usr/bin/../include/c++/v1',
+    '-I',
+    '/usr/local/include',
+    '-I',
+    '/usr/lib/clang/6.0.0/include',
+    '-I',
+    '/usr/include',
 ]
 
 
