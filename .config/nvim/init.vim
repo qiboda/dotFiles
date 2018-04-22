@@ -9,6 +9,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'} 
 
 Plug 'Chiel92/vim-autoformat'
+Plug 'Yggdroot/indentLine'
 
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -106,3 +107,6 @@ let g:formatdef_uncrustify_c = '"uncrustify -q -c ~/.uncrustify.cfg -l C "'
 let g:formatdef_uncrustify_cpp = '"uncrustify -q -c ~/.uncrustify.cfg -l CPP "'
 let g:formatters_c = ['uncrustify_c']
 let g:formatters_cpp = ['uncrustify_cpp']
+
+let g:formatdef_autopep8 = '"autopep8 --global-config ~/.flake8 - "'
+let g:formatters_python = ['autopep8']
