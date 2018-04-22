@@ -21,7 +21,7 @@ rsync：增量文件传输。(远程文件[夹]传输)
 proxychains：可以在交互式 shell 中使用 proxy。fedora is proxychains-ng,and command name is proxychains4。
 grep->ack->ag->rg: 同一类工具，查找在指定的文件/目录内包含指定字符的行/文件，强大程度从左到右。
 tcpdump: 抓包工具。
-xtum: 终端复用器。
+tmux: 终端复用器。
 fakeroot: 模拟root用户去维护文件。(用于需要root才能运行的命令)例如下面的aline命令。
 wmctrl: 窗口控制器。
 alien: deb和rpm包之间转换。
@@ -36,3 +36,6 @@ visualinfo: 与glewinfo类似，但也包括了驱动和显示器的信息。同
 p7zip: 解压、压缩7z文件。
 eog: 图片查看工具（eye of gnome）。
 feh: 图片查看工具。
+ImageMagick: 是一款优秀的基于命令行的位图处理软件，可以在超过 100 种不同的图像格式之间转换，或对图像进行各种变换和处理。
+evince: gnome的文档查看器，可以查看pdf，ps，dvi的文件。
+fdupes: 查找相同文件。
