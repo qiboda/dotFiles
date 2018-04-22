@@ -66,6 +66,8 @@ ZSH_THEME=simple
 plugins=(
   git
   autojump
+  thefuck
+  zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
