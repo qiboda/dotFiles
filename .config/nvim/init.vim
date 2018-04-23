@@ -124,9 +124,9 @@ map <Leader> <Plug>(easymotion-prefix)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:Lf_ShortcutF = '<C-P>'
 let g:Lf_RootMarkers = ['.git', '.ycm_extra_conf.py']
-let g:Lf_WorkingDirectoryMode = 'Ac'
 " use default enternal tool rg, insteal of using version control tool, to find
-" files
+" files when not in git repo root directory, otherwise, use version control
+" tool
 let g:Lf_UseVersionControlTool = 0
 let g:Lf_DefaultExternalTool = "rg"
 
