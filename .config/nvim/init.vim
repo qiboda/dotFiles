@@ -8,6 +8,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'Valloric/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'} 
 
+Plug 'flazz/vim-colorschemes'
+Plug 'octol/vim-cpp-enhanced-highlight'
+
 Plug 'Chiel92/vim-autoformat'
 Plug 'Yggdroot/indentLine'
 
@@ -22,6 +25,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'easymotion/vim-easymotion'
 
+Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
 
 Plug 'scrooloose/nerdcommenter'
@@ -44,6 +48,16 @@ set mouse=a
 
 " set <leader> to ,
 let mapleader = ","
+
+" search
+set ignorecase
+set smartcase
+
+" colorscheme
+set bg=dark
+colorscheme gruvbox
+" set nvim can transparent in terminal
+"highlight Normal ctermbg=none
 
 nnoremap <C-L> :nohls<Enter>
 nnoremap <Up> gk
@@ -76,10 +90,26 @@ nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" CppEnhancedHighlight Plugin
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_decl_highlight = 1
+let g:cpp_experimental_simple_template_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+let g:cpp_concepts_highlight = 1
+let g:cpp_no_function_highlight = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ultisnips Plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips/']
 let g:UltiSnipsUsePythonVersion = 3
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" EasyMotion Plugin
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <Leader> <Plug>(easymotion-prefix)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " YCM Plugin
