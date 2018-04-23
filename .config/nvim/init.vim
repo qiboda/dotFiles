@@ -5,6 +5,10 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
+Plug 'Yggdroot/LeaderF', { 'do': '.\install.sh' }
+
+Plug 'w0rp/ale'
+
 Plug 'Valloric/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'} 
 
@@ -18,6 +22,8 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 Plug 'tpope/vim-surround', { 'tags': '*' }
+
+Plug 'mhinz/vim-signify'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -110,6 +116,17 @@ let g:UltiSnipsUsePythonVersion = 3
 " EasyMotion Plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <Leader> <Plug>(easymotion-prefix)
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" LeaderF Plugin
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:Lf_ShortcutF = '<C-P>'
+let g:Lf_RootMarkers = ['.git', '.ycm_extra_conf.py']
+let g:Lf_WorkingDirectoryMode = 'Ac'
+" use default enternal tool rg, insteal of using version control tool, to find
+" files
+let g:Lf_UseVersionControlTool = 0
+let g:Lf_DefaultExternalTool = "rg"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " YCM Plugin
