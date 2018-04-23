@@ -36,6 +36,8 @@ Plug 'mattn/gist-vim'
 
 Plug 'scrooloose/nerdcommenter'
 
+Plug 'lilydjwg/fcitx.vim'
+
 " Initialize plugin system
 call plug#end()
 
