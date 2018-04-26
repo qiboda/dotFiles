@@ -1,0 +1,76 @@
+perror: 可以在终端打印errno的解释。
+errno: 在终端查看错误编号及变量名等信息。(在moreutils包中)
+printenv: 打印环境变量。
+shred: 覆写数据，确保数据恢复工具也无法找回元数据。居然由这么狠的命令。。。
+tput: 查询终端的信息。
+
+coredumpctl: 管理coredump文件。
+
+# 系统的各种limits。
+getconf: 得到各种系统变量的值。例如内存页大小。
+ulimit: 设置以及查看limits
+
+# 用户，组，权限等管理。
+useradd: 添加用户以及修改用户信息。
+adduser: 添加用户。
+
+who: 查看当前用户。
+who am I: 查看我是谁。
+
+newgrp: 改变用户登录时的默认组。
+groupadd: 添加组。
+
+groups: 查询用户的组信息。
+
+chgrp: 修改文件组。
+chown: 修改文件拥有者。
+chmod: 修改用户权限。
+
+passwd: 修改密码。
+
+# 进程相关。
+pgrep: 查找进程。
+ps: 列举进程。
+pstree: 进程树。
+kill: 杀死进程根据id。
+pkill: 杀死进程根据进程名。
+killall: 杀死所有进程根据进程名。
+fuser: 显示正在使用文件或socket的进程。
+
+# 时间
+date: 得到当前日期。
+tzselect: 设置时区。
+time: 得到一个程序的总运行时间，用户模式运行时间，系统模式运行时间。
+
+# 创建文件。
+mknod: 创建设备文件。
+
+# X-Windows。
+xrandr: 显示屏幕属性。
+
+# 文件。
+stat: 显示文件各种元数据，包括块的大小。
+
+# link。
+readlink: 读取符号链接的内容。
+ln: 建立link。
+
+# 路径。
+realpath: 解析相对路径到绝对路径，也可用于符号链接。
+pwd: 当前路径。
+basename: 路径最后的文件名，包括文件夹。
+dirname：路径排除basename的路径。
+
+# 设备。
+blkid: 获取块设备的UUID。
+
+# 文件系统。
+fsck: 检查修改文件系统。
+
+# 可执行文件(elf)。
+size: 各个段的大小。
+readelf: 获取elf的各种信息。
+elfedit: 编辑elf的elf头。
+
+# 统计文本
+wc: 显示换行，单词，字符个数。

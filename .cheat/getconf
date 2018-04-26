@@ -1,0 +1,2 @@
+# 得到内存页的大小
+getconf PAGE_SIZE
