@@ -10,7 +10,7 @@ Plug 'Yggdroot/LeaderF', { 'do': '.\install.sh' }
 Plug 'w0rp/ale'
 
 Plug 'Valloric/YouCompleteMe'
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'} 
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 
 Plug 'flazz/vim-colorschemes'
 Plug 'octol/vim-cpp-enhanced-highlight'
@@ -70,17 +70,17 @@ colorscheme gruvbox
 nnoremap <C-L> :nohls<Enter>
 nnoremap <Up> gk
 nnoremap <Down> gj
-nnoremap <F2> :w<Enter>:te ydcv <cword><Enter>i
+nnoremap <F2> :te ydcv <cword><Enter>i
 
 " set no suffix and including '#include' file filetype to cpp
 au BufRead,BufNewFile * if expand('%:t') !~ '\.' && join(getline(1, '$'), "\n") =~ '#include'| set ft=cpp | endif
 
 " windows
 set splitright
-set splitbelow
+"set splitbelow
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" terminal-emulator 
+" terminal-emulator
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " to normal mode
 tnoremap <Esc> <C-\><C-n>
@@ -147,11 +147,12 @@ let g:ycm_global_ycm_extra_conf = $HOME.'/.vim/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
+let g:ycm_complete_in_comments = 1
 
 let g:ycm_semantic_triggers =  {
-			\ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
-			\ 'cs,lua,javascript': ['re!\w{2}'],
-			\ }
+            \ 'c,cpp,python,java,go,erlang,perl': ['re!\w{2}'],
+            \ 'cs,lua,javascript': ['re!\w{2}'],
+            \ }
 
 " subcommand
 nnoremap <leader>gt :YcmCompleter GoTo<CR>
