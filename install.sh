@@ -17,6 +17,21 @@ if [ -d ~/.git ]; then
     exit
 fi
 
+if [ -f ~/.bash_profile ]; then
+    printf "Back up your .bash_profile to .bash_profile.dotfile.\\n"
+    mv ~/.bash_profile ~/.bash_profile.dotfile
+fi
+
+if [ -f ~/.bash_logout ]; then
+    printf "Back up your .bash_logout to .bash_logout.dotfile.\\n"
+    mv ~/.bash_logout ~/.bash_logout.dotfile
+fi
+
+if [ -f ~/.bashrc ]; then
+    printf "Back up your .bashrc to .bashrc.dotfile.\\n"
+    mv ~/.bashrc ~/.bashrc.dotfile
+fi
+
 if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
     printf "remove ~/.zshrc from oh-my-zsh.\\n";
     rm .zshrc
