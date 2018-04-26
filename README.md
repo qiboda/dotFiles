@@ -1,7 +1,7 @@
 # dotFiles
 These are my dot files.
 
-If you want use these files. You can run:
+If you want to use these files. You can run:
 
     sh -c "$(curl -fsSL https://github.com/qiboda/dotFiles/raw/master/install.sh)"
 
