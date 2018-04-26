@@ -75,6 +75,10 @@ nnoremap <F2> :w<Enter>:te ydcv <cword><Enter>i
 " set no suffix and including '#include' file filetype to cpp
 au BufRead,BufNewFile * if expand('%:t') !~ '\.' && join(getline(1, '$'), "\n") =~ '#include'| set ft=cpp | endif
 
+" windows
+set splitright
+set splitbelow
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " terminal-emulator 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
