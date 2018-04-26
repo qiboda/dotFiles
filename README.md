@@ -10,14 +10,14 @@ If you want use these files. You can run:
 requirements
 ------------
 
-curl
-git
-
+* curl
+* zsh
+* git 
     
 NOTE
-====
+----
 
-You need modify .gitconfig file, like this:
+You need to config git, like this:
 
     git config --global user.name "qiboda"
     git config --global user.email qiboda00@gmail.com
