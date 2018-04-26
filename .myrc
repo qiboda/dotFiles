@@ -36,6 +36,30 @@ export LIBRARY_PATH=$LIBRARY_PATH:$HOME/.local/lib
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib
 
 ###############################################################################
+# Proxy config
+###############################################################################
+
+function proxy_on() {
+    export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+
+    export http_proxy="http://127.0.0.1:50335/" \
+           https_proxy=$http_proxy \
+           ftp_proxy=$http_proxy \
+           rsync_proxy=$http_proxy \
+           HTTP_PROXY=$http_proxy \
+           HTTPS_PROXY=$http_proxy \
+           FTP_PROXY=$http_proxy \ 
+           RSYNC_PROXY=$http_proxy
+}
+
+function proxy_off(){
+    unset http_proxy https_proxy ftp_proxy rsync_proxy \
+          HTTP_PROXY HTTPS_PROXY FTP_PROXY RSYNC_PROXY
+    echo -e "Proxy environment variable removed."
+}
+
+
+###############################################################################
 # All aliases
 ###############################################################################
 alias rm=trash
