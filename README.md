@@ -1,6 +1,4 @@
 # dotFiles
-my dot files
-
 These are my dot files.
 
 If you want use these files. You can run:
