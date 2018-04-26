@@ -1,0 +1,8 @@
+[icdiff]
+	options = --highlight --line-numbers
+[core]
+	autocrlf = false
+	safecrlf = true
+[user]
+	email = qiboda00@gmail.com
+	name = qiboda
