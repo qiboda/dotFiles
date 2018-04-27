@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 
-Plug 'Yggdroot/LeaderF', { 'do': '.\install.sh' }
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 Plug 'w0rp/ale'
 
@@ -35,6 +35,9 @@ Plug 'mattn/webapi-vim'
 Plug 'mattn/gist-vim'
 
 Plug 'scrooloose/nerdcommenter'
+
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
 
 Plug 'lilydjwg/fcitx.vim'
 
@@ -70,7 +73,7 @@ colorscheme gruvbox
 nnoremap <C-L> :nohls<Enter>
 nnoremap <Up> gk
 nnoremap <Down> gj
-nnoremap <F2> :te ydcv <cword><Enter>i
+nnoremap <F2> :vs<Enter>:te ydcv <cword><Enter>i
 
 " set no suffix and including '#include' file filetype to cpp
 au BufRead,BufNewFile * if expand('%:t') !~ '\.' && join(getline(1, '$'), "\n") =~ '#include'| set ft=cpp | endif
