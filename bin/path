@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# 按行输出path变量
+echo $PATH | tr ":" "\n"
+
