@@ -4,7 +4,7 @@ if [ -f ~/.myrc ]; then
 fi
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$PATH:$HOME/.local/bin
+#export PATH=$PATH:
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/qiboda/.oh-my-zsh
