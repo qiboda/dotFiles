@@ -12,6 +12,7 @@
 !/.README
 !/.LICENSE
 !/.festivalrc
+!/bin
 !/install.sh
 
 !/.urxvt
