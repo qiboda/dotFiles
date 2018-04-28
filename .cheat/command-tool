@@ -39,3 +39,7 @@ feh: 图片查看工具。
 ImageMagick: 是一款优秀的基于命令行的位图处理软件，可以在超过 100 种不同的图像格式之间转换，或对图像进行各种变换和处理。
 evince: gnome的文档查看器，可以查看pdf，ps，dvi的文件。
 fdupes: 查找相同文件。
+fc-list: 查看字体。
+cmatrix: 数字雨。
+linux_logo: linux发行版的logo。
+sl: 火车。
