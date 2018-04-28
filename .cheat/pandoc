@@ -1,0 +1,2 @@
+# 转换中文的epub类型到pdf类型文件
+pandoc -o xxx.pdf --pdf-engine=xelatex -V CJKmainfont='WenQuanYi Zen Hei Mono' xxx.epub
