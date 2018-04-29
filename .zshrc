@@ -68,6 +68,8 @@ plugins=(
   autojump
   thefuck
   zsh-autosuggestions
+  django
+  pip
 )
 
 source $ZSH/oh-my-zsh.sh
