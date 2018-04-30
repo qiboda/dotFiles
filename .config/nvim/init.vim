@@ -7,6 +7,8 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
+Plug 'skywind3000/asyncrun.vim'
+
 Plug 'w0rp/ale'
 
 Plug 'Valloric/YouCompleteMe'
@@ -173,3 +175,26 @@ let g:formatters_cpp = ['uncrustify_cpp']
 
 let g:formatdef_autopep8 = '"autopep8 --global-config ~/.flake8 - "'
 let g:formatters_python = ['autopep8']
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ALE Plugin
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" linter list
+let g:ale_open_list = 0
+
+" trigger
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_on_insert_leave = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" AsyncRun Plugin
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" quickfix window
+let g:asyncrun_open = 10
+nnoremap <F10> :call asyncrun#quickfix_toggle(10)<cr>
+
+" build and run a single file
+nnoremap <silent> <F5> :AsyncRun clang -Wall -O2 "$(VIM_FILEPATH)" -o "$(VIM_FILEDIR)/$(VIM_FILENOEXT)"<cr>
+nnoremap <silent> <F4> :AsyncRun -raw -cwd=$(VIM_FILEDIR) "$(VIM_FILEDIR)/$(VIM_FILENOEXT)"<cr>
