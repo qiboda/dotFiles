@@ -1,3 +1,11 @@
+echo -n "The files in repo will overwrite your files, continue?[yes/No}"
+read -r res
+res=$(echo "$res" | tr "[:upper:]" "[:lower:]")
+
+if [ "$res" != "yes" ] && [ "$res" != "y" ]; then
+    exit 0
+fi
+
 cd ~
 
 # install oh-my-zsh
