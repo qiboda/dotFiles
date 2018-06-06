@@ -166,7 +166,7 @@ nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " auto-formatter
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-noremap <F3> :Autoformat<CR>
+nnoremap <M-CR> :Autoformat<CR>
 
 let g:formatdef_uncrustify_c = '"uncrustify -q -c ~/.uncrustify.cfg -l C "'
 let g:formatdef_uncrustify_cpp = '"uncrustify -q -c ~/.uncrustify.cfg -l CPP "'
