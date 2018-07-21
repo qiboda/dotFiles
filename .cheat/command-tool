@@ -47,3 +47,4 @@ iftop: 查看网速。
 inotify-tools: 文件监控工具。
 dmidecode: 解码硬件信息。
 Baka-MPlayer: 视频播放器，mpv播放器的前端。
+gtypist: GNU 命令行打字练习软件。
