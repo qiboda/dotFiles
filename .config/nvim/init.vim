@@ -7,8 +7,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
-Plug 'skywind3000/asyncrun.vim'
-
 Plug 'w0rp/ale'
 
 Plug 'Valloric/YouCompleteMe'
@@ -187,14 +185,3 @@ let g:ale_open_list = 0
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" AsyncRun Plugin
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" quickfix window
-let g:asyncrun_open = 10
-nnoremap <F10> :call asyncrun#quickfix_toggle(10)<cr>
-
-" build and run a single file
-nnoremap <silent> <F5> :AsyncRun clang -Wall -O2 "$(VIM_FILEPATH)" -o "$(VIM_FILEDIR)/$(VIM_FILENOEXT)"<cr>
-nnoremap <silent> <F4> :AsyncRun -raw -cwd=$(VIM_FILEDIR) "$(VIM_FILEDIR)/$(VIM_FILENOEXT)"<cr>
