@@ -1,6 +1,6 @@
-# Add .myrc configure
-if [ -f ~/.myrc ]; then
-    source ~/.myrc
+# Add .commonrc configure
+if [ -f ~/.commonrc ]; then
+	. ~/.commonrc
 fi
 
 # If you come from bash you might have to change your $PATH.

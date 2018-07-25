@@ -5,9 +5,9 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# Source my runtime definitions
-if [ -f ~/.myrc ]; then
-	. ~/.myrc
+# Source common runtime definitions
+if [ -f ~/.commonrc ]; then
+	. ~/.commonrc
 fi
 
 export PS1='${0} \w>'
