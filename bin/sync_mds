@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# 使用 ssh 同步 ~/Documents/markdown 目录下所有的文件到远程服务器的/home/qiboda/Documents/markdown 目录下。
+# --delete 如果远程目录下有多于本地目录的文件，会自动删除。
+# --progress 显示传输进度。
+rsync --delete --progress -a -e 'ssh -i ~/.ssh/id_rsa_2048_main' ~/Documents/markdown qiboda@qiboda.me:/home/qiboda/Documents
