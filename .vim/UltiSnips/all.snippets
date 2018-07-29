@@ -100,4 +100,16 @@ snippet todo "TODO comment" bw
 `!p snip.rv=get_comment_format()[0]` ${2:TODO}: $0${3: <${4:`!v strftime('%d-%m-%y')`}${5:, `!v g:snips_author`}>} `!p snip.rv=get_comment_format()[2]`
 endsnippet
 
+
+###########
+# LICENSE #
+###########
+snippet mit "mit LICENSE" b
+// --------------------------------------------------------------------
+// Copyright(c) `!v strftime("%Y")` qiboda
+// Licensed under the MIT License <http://opensource.org/licenses/MIT>.
+// See the LICENSE file in the repo root for full license information.
+// --------------------------------------------------------------------
+endsnippet
+
 # vim:ft=snippets:
