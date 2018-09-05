@@ -21,7 +21,9 @@ urxvt.keysym.Control-0x3d: perl:font-size:increase
 urxvt.keysym.Control-0x2d: perl:font-size:decrease
 !! Fullscreen switch
 urxvt.keysym.F11: perl:fullscreen:switch
-
+!! Input
+URxvt.inputMethod: fcitx
+urxvt.imLocale: zh_CN.utf8
 
 !! Yeah, I am one of those, who use these keys in Vim :-(
 !! urxvt.keysym.Home:          \033[1~
