@@ -185,6 +185,9 @@ let g:ale_open_list = 0
 let g:ale_lint_on_text_changed = 'normal'
 let g:ale_lint_on_insert_leave = 1
 
+let g:ale_linters = {'cpp': ['cppcheck']}
+let g:ale_cpp_cppcheck_options = '--enable=style'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " indentLine Plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
