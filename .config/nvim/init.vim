@@ -12,6 +12,8 @@ Plug 'w0rp/ale'
 Plug 'Valloric/YouCompleteMe'
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 
+Plug 'jsfaint/gen_tags.vim'
+
 Plug 'flazz/vim-colorschemes'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
@@ -191,4 +193,10 @@ let g:ale_cpp_cppcheck_options = '--enable=style'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " indentLine Plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:indentLine_fileTypeExclude=['markdown']
+let g:indentLine_fileTypeExclude = ['markdown']
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" gen_tags Plugin
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:gen_tags#statusline = 1
