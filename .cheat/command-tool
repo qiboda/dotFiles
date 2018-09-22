@@ -26,6 +26,7 @@ fakeroot: 模拟root用户去维护文件。(用于需要root才能运行的命�
 wmctrl: 窗口控制器。
 alien: deb和rpm包之间转换。
 ydcv: 有道词典命令行版。
+unarchiver: 智能解压工具。
 gzrc: 修复tar.gz压缩错误的压缩包。
 iconv: 文件编码转换。
 doc2unix: 转换windows换行符到linux的换行符。
