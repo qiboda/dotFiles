@@ -50,3 +50,4 @@ dmidecode: 解码硬件信息。
 Baka-MPlayer: 视频播放器，mpv播放器的前端。
 gtypist: GNU 命令行打字练习软件。
 unzip-iconv: 使用 -O cp936 参数可以解决中文乱码问题。
+renderdoc: OpenGL 调试工具。
