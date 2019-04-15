@@ -1,5 +1,6 @@
 # 视频
 mpv
+bake-mplayer: base mpv
 
 # 虚拟机
 VirtualBox
