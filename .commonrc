@@ -24,6 +24,13 @@ export VISUAL=nvim
 export CHEAT_EDITOR=nvim
 
 ################################################################################
+# Fcitx config
+################################################################################
+export GTK_IM_MODULE=fcitx 
+export QT_IM_MODULE=fcitx 
+export XMODIFIERS=@im=fcitx
+
+################################################################################
 # Clang config
 ################################################################################
 # CPATH is include path list for c and c++ and so on
