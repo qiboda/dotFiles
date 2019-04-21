@@ -12,9 +12,12 @@
 !/.README
 !/.LICENSE
 !/.festivalrc
-!/bin
 !/install.sh
 !/.pam_environment
+!/.asoundrc
+
+!/bin
+/bin/ydcv
 
 !/.urxvt
 /.urxvt/*

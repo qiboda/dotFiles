@@ -1,0 +1,28 @@
+# alas config
+
+# sampler config, need alsa-plugins and libsamplerate packages
+defaults.pcm.rate_converter "samplerate_best"
+
+# upmixing, used for 5.1 or 7.1 channel music etc.
+pcm.upmix71 {
+    type upmix
+    slave.pcm "surround71"
+    delay 15
+    channels 8
+}
+pcm.upmix51 {
+    type upmix
+    slave.pcm "surround51"
+    delay 15
+    channels 6
+}
+
+# downmixing
+pcm.!surround51 {
+    type vdownmix
+    slave.pcm "default"
+}
+pcm.!surround40 {
+    type vdownmix
+    slave.pcm "default"
+}
