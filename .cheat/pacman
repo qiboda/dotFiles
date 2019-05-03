@@ -49,3 +49,7 @@ cd "$pkgname"
 makepkg -s
 # Install
 sudo pacman -U <package file (.pkg.tar.xz)>
+
+# find file from which package
+sudo pacman -Fy
+sudo pacman -Fs filename

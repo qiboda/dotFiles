@@ -70,7 +70,7 @@ set smartcase
 set bg=dark
 colorscheme gruvbox
 " set nvim can transparent in terminal
-"highlight Normal ctermbg=none
+highlight Normal ctermbg=none
 
 nnoremap <C-L> :nohls<Enter>
 nnoremap <Up> gk
@@ -83,6 +83,9 @@ au BufRead,BufNewFile * if expand('%:t') !~ '\.' && join(getline(1, '$'), "\n") 
 " windows
 set splitright
 "set splitbelow
+
+" Folding
+"set foldmethod=indent
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " terminal-emulator
@@ -148,6 +151,7 @@ let g:ycm_key_list_previous_completion = ['<Up>']
 
 " config
 let g:ycm_server_python_interpreter = '/usr/bin/python3'
+let g:ycm_confirm_extra_conf = 0
 let g:ycm_global_ycm_extra_conf = $HOME.'/.vim/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_show_diagnostics_ui = 0

@@ -2,11 +2,12 @@
 urxvt.termName: rxvt-unicode
 urxvt.scrollBar: False
 urxvt.depth: 32
-urxvt.background: rgba:0000/0000/0000/bbbb
+urxvt.transparent: true
+urxvt.background: rgba:0000/0000/0000/4444
 urxvt.foreground: gray
 !! Font prefferenes
-urxvt.font: xft:Source Code Pro:pixelsize=25
-urxvt.boldFont: xft:Source Code Pro:pixelsize=25:weight=bold
+urxvt.font: xft:Source Code Pro:pixelsize=20,xft:Droid Sans Mono:size=9:style=Regular:antialias=true,xft:文泉驿等宽正黑:size=8:style=Regular:antialias=true
+urxvt.boldFont: xft:Source Code Pro:pixelsize=20:weight=bold,xft:Droid Sans Mono:size=9:style=BOld:antialias=true,xft:文泉驿等宽正黑:size=8:style=Bold:antialias=true
 urxvt.letterSpace: 0
 !! Larger history limit
 urxvt.saveLines: 1000000
@@ -14,7 +15,7 @@ urxvt.saveLines: 1000000
 !! Perl extensions
 urxvt.perl-ext-common: default,matcher,font-size,fullscreen
 !! Open urls in browser with Control-Click
-urxvt.urlLauncher: /usr/bin/chrome
+urxvt.url-launcher: google-chrome-stable
 urxvt.matcher.button: C1
 !! Change font size on Control-Plus/Minus
 urxvt.keysym.Control-0x3d: perl:font-size:increase
@@ -22,7 +23,7 @@ urxvt.keysym.Control-0x2d: perl:font-size:decrease
 !! Fullscreen switch
 urxvt.keysym.F11: perl:fullscreen:switch
 !! Input
-URxvt.inputMethod: fcitx
+urxvt.inputMethod: fcitx
 urxvt.imLocale: zh_CN.utf8
 
 !! Yeah, I am one of those, who use these keys in Vim :-(

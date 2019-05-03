@@ -1,6 +1,14 @@
-# 视频
+# 视频播放器
 mpv
 bake-mplayer: base mpv
 
 # 虚拟机
 VirtualBox
+
+# 启动器
+dmenu
+dmenu2
+rofi
+
+# 状态栏
+polybar
