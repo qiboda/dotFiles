@@ -185,3 +185,9 @@ new_window 1pixel
 
 # use polybar instead of i3status
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# focus to window under the mouse
+focus_follows_mouse no
+
+# for window, `xprop` command can get filter info
+for_window [class="UE4Editor"] floating enable

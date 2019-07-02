@@ -22,13 +22,64 @@ endsnippet
 snippet macro "macro_rules!" b
 macro_rules! ${1:name} {
 	(${2:matcher}) => (
-		$3
-	)
+			$3
+			)
 }
 endsnippet
 
 snippet fd "Struct field definition" w
 ${1:name}: ${2:Type},
+endsnippet
+
+snippet str "struct" b
+struct ${1:name} {
+	$0
+}
+endsnippet
+
+snippet fn "function" b
+fn ${1:name}(${2:arg}: ${3:type}) ${4:-> ${5:res}}{
+	$0
+}
+endsnippet
+
+snippet fns "function with self" b
+fn ${1:name}(&self${2:, ${3:arg}: ${4:type} }) ${5:-> ${6:res}}{
+	$0
+}
+endsnippet
+
+snippet if "if" w
+if ${1} {${2}}
+endsnippet
+
+snippet for "for" w
+for ${1:value} in ${2:values} {
+	${0}
+}
+endsnippet
+
+snippet mat "match {}" w
+match ${1:value} {
+	${0}
+}
+endsnippet
+
+snippet md "val => block" w
+${1:None} => ${2:None},${0}
+endsnippet
+
+snippet impl "impl" w
+impl ${1:name} for ${2:name} {
+	${3:type ${4:name} = ${5:type};}
+	${0}
+}
+endsnippet
+
+snippet tr "trait" w
+trait ${1:name} {
+	$0
+}
 endsnippet
 
 # vim:ft=snippets:

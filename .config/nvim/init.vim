@@ -21,7 +21,7 @@ Plug 'Chiel92/vim-autoformat'
 Plug 'Yggdroot/indentLine'
 
 Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+" Plug 'honza/vim-snippets'
 
 Plug 'tpope/vim-surround', { 'tags': '*' }
 
@@ -125,6 +125,7 @@ let g:cpp_no_function_highlight = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips/']
 let g:UltiSnipsUsePythonVersion = 3
+let g:UltiSnipsSnippetsDir=$HOME.'/.vim/UltiSnips/'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " EasyMotion Plugin

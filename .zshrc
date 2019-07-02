@@ -70,6 +70,9 @@ plugins=(
   zsh-autosuggestions
   django
   pip
+  git-flow-avh
+  rust
+  cargo
 )
 
 source $ZSH/oh-my-zsh.sh
