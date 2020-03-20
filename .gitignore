@@ -47,6 +47,8 @@
 !/.config/i3/config
 !/.config/alacritty
 !/.config/alacritty/*
+!/.config/yay
+!/.config/yay/*
 
 !/.local
 /.local/*
