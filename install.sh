@@ -1,49 +1,33 @@
-echo -n "The files in repo will overwrite your files, continue?[yes/No}"
-read -r res
-res=$(echo "$res" | tr "[:upper:]" "[:lower:]")
+###############################################
+# base
+###############################################
 
-if [ "$res" != "yes" ] && [ "$res" != "y" ]; then
-    exit 0
-fi
+# pacman
+sudo pacman -Syu feh ripgrep rsync fzf thefuck htop trash-cli cloc aria2 shellcheck \
+    python-pip \
+    alacritty \
+    screenfetch \
+    fcitx \
+    mandb \
+    cmake \
+    clang \
 
-cd ~
+# yay
+yay -Syu oh-my-zsh-git zsh-autosuggestions autojump
 
-# install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" + "\nexit"
+# python
+sudo pip install cheat
 
-# install zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}"/plugins/zsh-autosuggestions
+###############################################
+# neovim
+###############################################
 
-# install oh-my-tmux
-git clone https://github.com/gpakosz/.tmux.git
-ln -s -f .tmux/.tmux.conf
+# pacman
+sudo pacman -Syu uncrustify
 
-# install my dot files
-if [ -d ~/.git ]; then
-    printf "You already have a git repo in home.\\n"
-    printf "You'll need to remove .git if you want to re-install.\\n"
-    exit
-fi
+# yay
+yay -S global
 
-if [ -f ~/.bash_profile ]; then
-    printf "Back up your .bash_profile to .bash_profile.dotfile.\\n"
-    mv ~/.bash_profile ~/.bash_profile.dotfile
-fi
+# pip
+sudo pip install neovim
 
-if [ -f ~/.bash_logout ]; then
-    printf "Back up your .bash_logout to .bash_logout.dotfile.\\n"
-    mv ~/.bash_logout ~/.bash_logout.dotfile
-fi
-
-if [ -f ~/.bashrc ]; then
-    printf "Back up your .bashrc to .bashrc.dotfile.\\n"
-    mv ~/.bashrc ~/.bashrc.dotfile
-fi
-
-if [ -f ~/.zshrc ] || [ -h ~/.zshrc ]; then
-    printf "remove ~/.zshrc from oh-my-zsh.\\n";
-    rm .zshrc
-fi
-
-git init
-git pull https://github.com/qiboda/dotFiles.git
