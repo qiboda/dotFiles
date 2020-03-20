@@ -1,7 +1,7 @@
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
 " Make sure you use single quotes
 
@@ -9,7 +9,7 @@ Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 
 Plug 'w0rp/ale'
 
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --rust-completer'}
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 
 Plug 'jsfaint/gen_tags.vim'
