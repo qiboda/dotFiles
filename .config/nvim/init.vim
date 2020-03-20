@@ -17,7 +17,7 @@ Plug 'jsfaint/gen_tags.vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'octol/vim-cpp-enhanced-highlight'
 
-Plug 'Chiel92/vim-autoformat'
+Plug 'sbdchd/neoformat'
 Plug 'Yggdroot/indentLine'
 
 Plug 'SirVer/ultisnips'
@@ -68,7 +68,8 @@ set smartcase
 
 " colorscheme
 set bg=dark
-colorscheme gruvbox
+"colorscheme gruvbox
+colorscheme molokai
 " set nvim can transparent in terminal
 highlight Normal ctermbg=none
 
@@ -86,6 +87,10 @@ set splitright
 
 " Folding
 "set foldmethod=indent
+
+" encoding
+set encoding=utf-8 " The encoding displayed.
+set fileencoding=utf-8 " The edcoding written to file.
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " terminal-emulator
@@ -149,7 +154,9 @@ let g:Lf_DefaultExternalTool = "rg"
 " solve UltiSnips key conflict
 let g:ycm_key_list_select_completion = ['<Down>']
 let g:ycm_key_list_previous_completion = ['<Up>']
-
+" let g:ycm_key_list_select_completion = ['<C-J>']
+" let g:ycm_key_list_previous_completion = ['<C-K>']
+"
 " config
 let g:ycm_server_python_interpreter = '/usr/bin/python3'
 let g:ycm_confirm_extra_conf = 0
@@ -169,17 +176,30 @@ nnoremap <leader>gt :YcmCompleter GoTo<CR>
 nnoremap <leader>gd :YcmCompleter GetDoc<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" auto-formatter
+" neoformat
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-nnoremap <M-CR> :Autoformat<CR>
+nnoremap <M-CR> :Neoformat<CR>
 
-let g:formatdef_uncrustify_c = '"uncrustify -q -c ~/.uncrustify.cfg -l C "'
-let g:formatdef_uncrustify_cpp = '"uncrustify -q -c ~/.uncrustify.cfg -l CPP "'
-let g:formatters_c = ['uncrustify_c']
-let g:formatters_cpp = ['uncrustify_cpp']
+au BufWrite *.cpp,*.h,*.hpp,*.c :Neoformat
 
-let g:formatdef_autopep8 = '"autopep8 --global-config ~/.flake8 - "'
-let g:formatters_python = ['autopep8']
+let g:neoformat_cpp_uncrustify = {
+        \ 'exe': 'uncrustify',
+        \ 'args': ['-q', '-c ~/.uncrustify.cfg', '-l CPP'],
+        \ 'stdin': 1,
+        \ }
+let g:neoformat_enabled_c = ['uncrustify']
+let g:neoformat_enabled_cpp = ['uncrustify']
+
+let g:neoformat_python_autopep8 = {
+        \ 'exe': 'autopep8',
+        \ 'args': ['-s 4', '-E'],
+        \ 'replace': 1,
+        \ 'stdin': 1,
+        \ 'valid_exit_codes': [0, 23],
+        \ 'no_append': 1,
+        \ }
+
+let g:neoformat_enabled_python = ['autopep8']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ALE Plugin
@@ -205,3 +225,9 @@ let g:indentLine_fileTypeExclude = ['markdown']
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let g:gen_tags#statusline = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" nerdcommenter Plugin
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let NERDSpaceDelims = 1
