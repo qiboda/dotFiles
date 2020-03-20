@@ -72,8 +72,6 @@ function proxy_off(){
 # All aliases
 ###############################################################################
 
-# Make shell to identify user aliases after sudo
-alias sudo='nocorrect sudo'
 alias rm=trash
 alias la='ls -a'
 alias l.='ls -ad .*'

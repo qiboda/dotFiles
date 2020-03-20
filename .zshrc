@@ -7,7 +7,7 @@ fi
 #export PATH=$PATH:
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/qiboda/.oh-my-zsh
+export ZSH=/usr/share/oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -73,6 +73,7 @@ plugins=(
   git-flow-avh
   rust
   cargo
+  sudo
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -105,7 +106,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-#
+
+# Make shell to identify user aliases after sudo
+alias sudo='nocorrect sudo'
 
 # Solve zsh can't use end and home keys when using xshell
 # but can't use home and end in vim
