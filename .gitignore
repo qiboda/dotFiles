@@ -49,6 +49,8 @@
 !/.config/alacritty/*
 !/.config/yay
 !/.config/yay/*
+!/.config/polybar
+!/.config/polybar/*
 
 !/.local
 /.local/*

@@ -191,3 +191,5 @@ focus_follows_mouse no
 
 # for window, `xprop` command can get filter info
 for_window [class="UE4Editor"] floating enable
+
+exec feh --randomize --bg-fill $HOME/Pictures/
