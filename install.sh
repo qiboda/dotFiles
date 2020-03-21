@@ -30,7 +30,7 @@ yay -Syu i3-gnome polybar rofi networkmanager gdm
 ###############################################
 
 # pacman
-sudo pacman -Syu uncrustify
+sudo pacman -Syu uncrustify ctags
 
 # yay
 yay -S global
