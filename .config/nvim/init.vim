@@ -128,9 +128,9 @@ let g:cpp_no_function_highlight = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ultisnips Plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/UltiSnips/']
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nivm/UltiSnips/']
 let g:UltiSnipsUsePythonVersion = 3
-let g:UltiSnipsSnippetsDir=$HOME.'/.vim/UltiSnips/'
+let g:UltiSnipsSnippetsDir=$HOME.'/.config/nvim/UltiSnips/'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " EasyMotion Plugin
@@ -152,15 +152,15 @@ let g:Lf_DefaultExternalTool = "rg"
 " YCM Plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " solve UltiSnips key conflict
-let g:ycm_key_list_select_completion = ['<Down>']
-let g:ycm_key_list_previous_completion = ['<Up>']
-" let g:ycm_key_list_select_completion = ['<C-J>']
-" let g:ycm_key_list_previous_completion = ['<C-K>']
+" let g:ycm_key_list_select_completion = ['<Down>']
+" let g:ycm_key_list_previous_completion = ['<Up>']
+let g:ycm_key_list_select_completion = ['<C-J>']
+let g:ycm_key_list_previous_completion = ['<C-K>']
 "
 " config
 let g:ycm_server_python_interpreter = '/usr/bin/python3'
 let g:ycm_confirm_extra_conf = 0
-let g:ycm_global_ycm_extra_conf = $HOME.'/.vim/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = $HOME.'/.config/nvim/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_collect_identifiers_from_comments_and_strings = 1
