@@ -7,11 +7,12 @@ requirements
 * zsh
 * git 
 
-install
+use
 ------------
 
-    mkdir ~/temp
-    git clone https://github.com/qiboda/dotFiles.git ~/temp
-    mv ~/temp/.git ~/.git
-    git checkout --hard
+    cd ~/
+    mkdir temp
+    git clone https://github.com/qiboda/dotFiles.git temp
+    mv temp/.git .git
+    git reset --hard HEAD
 
