@@ -67,6 +67,16 @@ function proxy_off(){
     echo -e "Proxy environment variable removed."
 }
 
+###############################################################################
+# FZF configure
+###############################################################################
+
+# 这行配置开启 ag 查找隐藏文件 及忽略 .git 文件
+# export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -l -g ""'
+# or
+export FZF_DEFAULT_COMMAND="fd -i --hidden -I --exclude={.git,.idea,.sass-cache,node_modules,build} --type f"
+
+export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
 
 ###############################################################################
 # All aliases

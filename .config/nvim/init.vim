@@ -128,7 +128,7 @@ let g:cpp_no_function_highlight = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Ultisnips Plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nivm/UltiSnips/']
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips/']
 let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsSnippetsDir=$HOME.'/.config/nvim/UltiSnips/'
 

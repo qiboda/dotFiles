@@ -20,6 +20,7 @@ ranger：带 Vim 模式的文件管理器。
 rsync：增量文件传输。(远程文件[夹]传输)
 proxychains：可以在交互式 shell 中使用 proxy。fedora is proxychains-ng,and command name is proxychains4。
 grep->ack->ag->rg: 同一类工具，查找在指定的文件/目录内包含指定字符的行/文件，强大程度从左到右。
+fd: 文件查找工具，配合fzf使用。
 tcpdump: 抓包工具。
 tmux: 终端复用器。
 fakeroot: 模拟root用户去维护文件。(用于需要root才能运行的命令)例如下面的alien命令。
