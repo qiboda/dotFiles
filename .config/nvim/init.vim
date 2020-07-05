@@ -184,8 +184,10 @@ au BufWrite *.cpp,*.h,*.hpp,*.c :Neoformat
 
 let g:neoformat_cpp_uncrustify = {
         \ 'exe': 'uncrustify',
-        \ 'args': ['-q', '-c ~/.uncrustify.cfg', '-l CPP'],
-        \ 'stdin': 1,
+        \ 'args': ['-q', '-c ~/.uncrustify.cfg', '-l CPP', '--replace'],
+        \ 'stdin': 0,
+        \ 'stderr': 1,
+        \ 'replace': 1,
         \ }
 let g:neoformat_enabled_c = ['uncrustify']
 let g:neoformat_enabled_cpp = ['uncrustify']
@@ -200,6 +202,9 @@ let g:neoformat_python_autopep8 = {
         \ }
 
 let g:neoformat_enabled_python = ['autopep8']
+
+" let g:neoformat_verbose = 1 " debug neoformat
+" let &verbose = 1 " also increases verbosity of the editor as a whole 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ALE Plugin
