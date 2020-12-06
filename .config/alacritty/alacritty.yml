@@ -37,6 +37,9 @@ window:
     x: 2
     y: 2
 
+  # Allow terminal applications to change Alacritty's window title.
+  dynamic_title: true
+
   # Spread additional padding evenly around the terminal content.
   dynamic_padding: false
 
@@ -72,18 +75,6 @@ scrolling:
   #
   # Specifying `0` will disable faux scrolling.
   multiplier: 3
-
-  # Scroll to the bottom when new text is written to the terminal.
-  auto_scroll: false
-
-# Spaces per Tab (changes require restart)
-#
-# This setting defines the width of a tab in cells.
-#
-# Some applications, like Emacs, rely on knowing about the width of a tab.
-# To prevent unexpected behavior in these applications, it's also required to
-# change the `it` value in terminfo when altering this setting.
-tabspaces: 8
 
 # Font configuration (changes require restart)
 font:
@@ -265,7 +256,7 @@ colors:
 #   - Linear
 #
 # Specifying a `duration` of `0` will disable the visual bell.
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
   color: '0xffffff'
@@ -333,9 +324,6 @@ selection:
 
   # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: false
-
-# Allow terminal applications to change Alacritty's window title.
-dynamic_title: true
 
 cursor:
   # Cursor style
@@ -470,14 +458,14 @@ alt_send_esc: true
 key_bindings:
   # (Windows/Linux only)
   # - { key: V,        mods: Control|Shift, action: Paste            }
-  - { key: V,        mods: Control,       action: Paste            }
-  - { key: C,        mods: Control,       action: Copy             }
-  - { key: Insert,   mods: Shift,         action: PasteSelection   }
-  - { key: Key0,     mods: Control,       action: ResetFontSize    }
-  - { key: Equals,   mods: Control,       action: IncreaseFontSize }
-  - { key: Add,      mods: Control,       action: IncreaseFontSize }
-  - { key: Subtract, mods: Control,       action: DecreaseFontSize }
-  - { key: Minus,    mods: Control,       action: DecreaseFontSize }
+  - { key: V,       mods: Control,       action: Paste            }
+  - { key: C,       mods: Control,       action: Copy             }
+  - { key: Insert,  mods: Shift,         action: PasteSelection   }
+  - { key: Key0,    mods: Control,       action: ResetFontSize    }
+  - { key: Equals,  mods: Control,       action: IncreaseFontSize }
+  - { key: At,      mods: Control,       action: IncreaseFontSize }
+  - { key: Ax,      mods: Control,       action: DecreaseFontSize }
+  - { key: Ax,      mods: Control,       action: DecreaseFontSize }
 
   # (macOS only)
   #- { key: Key0,   mods: Command, action: ResetFontSize    }
