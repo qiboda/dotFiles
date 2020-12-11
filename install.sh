@@ -3,32 +3,35 @@
 ###############################################
 
 # pacman
-sudo pacman -Syu feh ripgrep rsync fzf htop trash-cli cloc aria2 shellcheck \
+pacman -Syu feh ripgrep rsync fzf htop trash-cli cloc aria2 shellcheck \
     python \
     python-pip \
     alacritty \
     screenfetch \
     fcitx \
     mandb \
+    make \
     cmake \
     clang \
     dhcpcd \
     uncrustify \
     ctags \
-    make \
+    rustup \
+    lua \
+    fd
 
 # python
-sudo pip install cheat thefuck neovim
+pip install cheat thefuck neovim
 
 ###############################################
 # yay
 ###############################################
 
-sudo echo "[archlinuxcn]\nServer = https://repo.archlinuxcn.org/$arch" >> /etc/pacman.conf
+echo "[archlinuxcn]\nServer = https://repo.archlinuxcn.org/$arch" >> /etc/pacman.conf
 
-sudo pacman -Syu archlinuxcn-keyring
+pacman -Syu archlinuxcn-keyring
 
-sudo pacman -Syu archlinuxcn-mirrorlist-git yay
+pacman -Syu archlinuxcn-mirrorlist-git yay
 
 # yay
 yay -Syu oh-my-zsh-git zsh-autosuggestions autojump global
@@ -38,3 +41,8 @@ yay -Syu oh-my-zsh-git zsh-autosuggestions autojump global
 ###############################################
 
 yay -Syu i3-gnome polybar rofi networkmanager gdm
+
+###############################################
+# rust
+###############################################
+rustup install stable
