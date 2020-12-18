@@ -184,7 +184,7 @@ bindsym $mod+minus exec "amixer -c 0 set Master,0 playback 5%-"
 # use polybar instead of i3status
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id lantern -headless
-exec_always --no-startup-id picom --experimental-backends -b -i 0.75 -e 0.75 -m 0.75
+exec_always --no-startup-id picom -b # --experimental-backends -i 0.7 -e 0.7 -m 0.8  
 exec_always --no-startup-id gnome-power-manager
 
 # focus to window under the mouse
