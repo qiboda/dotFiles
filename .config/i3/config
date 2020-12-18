@@ -35,6 +35,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
+
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -175,21 +176,45 @@ bindsym $mod+r mode "resize"
 #}
 
 # Custom Key
-#bindsym $mod+Shift+d exec "amixer -c 0 set Master,0 playback 5%+"
-#bindsym $mod+Shift+s exec "amixer -c 0 set Master,0 playback 5%-"
-bindsym XF86AudioRaiseVolume exec "amixer -c 0 set Master,0 playback 5%+"
-bindsym XF86AudioLowerVolume exec "amixer -c 0 set Master,0 playback 5%-"
-
-# remove window title bar
-new_window 1pixel
+bindsym $mod+plus exec "amixer -c 0 set Master,0 playback 5%+"
+bindsym $mod+minus exec "amixer -c 0 set Master,0 playback 5%-"
+#bindsym XF86AudioRaiseVolume exec "amixer -c 0 set Master,0 playback 5%+"
+#bindsym XFYou can define gaps either globally or per workspace using the following syntax. Note that the gaps86AudioLowerVolume exec "amixer -c 0 set Master,0 playback 5%-"
 
 # use polybar instead of i3status
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+exec_always --no-startup-id lantern -headless
+exec_always --no-startup-id picom --experimental-backends -b -i 0.75 -e 0.75 -m 0.75
+exec_always --no-startup-id gnome-power-manager
 
 # focus to window under the mouse
 focus_follows_mouse no
 
 # for window, `xprop` command can get filter info
+for_window [class="*"] border pixel 2
 for_window [class="UE4Editor"] floating enable
+for_window [window_role="pop-up"] floating enable
 
-exec feh --randomize --bg-fill $HOME/Pictures/
+exec feh --randomize --bg-fill /mnt/share/Pictures/wallpaper
+
+popup_during_fullscreen smart
+
+# Make the currently focused window a scratchpad
+bindsym $mod+Backspace move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+Shift+Backspace scratchpad show
+
+# remove window title bar
+new_window 1pixel
+
+gaps inner 10
+gaps outer 1
+
+border_radius 8
+
+smart_gaps on
+smart_borders on
+smart_borders no_gaps
+hide_edge_borders smart_no_gaps
+
