@@ -1,7 +1,7 @@
 [icdiff]
 	options = --highlight --line-numbers
 [core]
-	autocrlf = false
+	autocrlf = input
 	safecrlf = true
 [user]
 	email = qiboda00@gmail.com

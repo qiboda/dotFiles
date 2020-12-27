@@ -51,6 +51,9 @@
 !/.config/yay/*
 !/.config/polybar
 !/.config/polybar/*
+!/.config/fontconfig
+!/.config/fontconfig/*
+!/.config/picom.conf
 
 !/.local
 /.local/*
