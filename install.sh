@@ -2,6 +2,10 @@
 # base
 ###############################################
 
+pacman -S reflector
+
+reflectoer -c China -s /etc/pacman.d/mirrorlist
+
 # pacman
 pacman -Syu feh ripgrep rsync fzf htop trash-cli cloc aria2 shellcheck \
     python \
@@ -27,7 +31,7 @@ pip install cheat thefuck neovim
 # yay
 ###############################################
 
-echo "[archlinuxcn]\nServer = https://repo.archlinuxcn.org/$arch" >> /etc/pacman.conf
+echo $"[archlinuxcn]\Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch" > /etc/pacman.conf
 
 pacman -Syu archlinuxcn-keyring
 
