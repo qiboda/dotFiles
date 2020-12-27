@@ -24,6 +24,7 @@ Plug 'SirVer/ultisnips'
 " Plug 'honza/vim-snippets'
 
 Plug 'tpope/vim-surround', { 'tags': '*' }
+Plug 'jiangmiao/auto-pairs'
 
 Plug 'mhinz/vim-signify'
 
