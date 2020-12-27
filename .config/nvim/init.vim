@@ -147,6 +147,7 @@ let g:Lf_RootMarkers = ['.git', '.ycm_extra_conf.py']
 " tool
 let g:Lf_UseVersionControlTool = 0
 let g:Lf_DefaultExternalTool = "rg"
+let g:Lf_ShowHidden = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " YCM Plugin
