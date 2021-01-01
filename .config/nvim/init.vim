@@ -21,7 +21,7 @@ Plug 'sbdchd/neoformat'
 Plug 'Yggdroot/indentLine'
 
 Plug 'SirVer/ultisnips'
-" Plug 'honza/vim-snippets'
+Plug 'honza/vim-snippets'
 
 Plug 'tpope/vim-surround', { 'tags': '*' }
 Plug 'jiangmiao/auto-pairs'
@@ -56,6 +56,9 @@ set shiftwidth=4
 " line number
 set number
 set relativenumber
+
+" paren
+let loaded_matchparen=1
 
 " mouse
 set mouse=a
@@ -149,6 +152,10 @@ let g:Lf_RootMarkers = ['.git', '.ycm_extra_conf.py']
 let g:Lf_UseVersionControlTool = 0
 let g:Lf_DefaultExternalTool = "rg"
 let g:Lf_ShowHidden = 1
+let g:Lf_WildIgnore = {
+        \ 'dir': ['.svn','.git','.hg'],
+        \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
+        \}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " YCM Plugin
@@ -156,8 +163,8 @@ let g:Lf_ShowHidden = 1
 " solve UltiSnips key conflict
 " let g:ycm_key_list_select_completion = ['<Down>']
 " let g:ycm_key_list_previous_completion = ['<Up>']
-let g:ycm_key_list_select_completion = ['<C-J>']
-let g:ycm_key_list_previous_completion = ['<C-K>']
+let g:ycm_key_list_select_completion = ['<C-N>']
+let g:ycm_key_list_previous_completion = ['<C-P>']
 "
 " config
 let g:ycm_server_python_interpreter = '/usr/bin/python3'
