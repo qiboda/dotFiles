@@ -44,6 +44,9 @@ Plug 'iamcco/markdown-preview.vim'
 
 Plug 'lilydjwg/fcitx.vim'
 
+Plug 'camspiers/animate.vim'
+Plug 'camspiers/lens.vim'
+
 " Initialize plugin system
 call plug#end()
 
@@ -157,6 +160,16 @@ let g:Lf_WildIgnore = {
         \ 'file': ['*.sw?','~$*','*.bak','*.exe','*.o','*.so','*.py[co]']
         \}
 
+function! Alternative()
+    let name = expand("%:t:r")
+    let extension = expand("%:e")
+    let mapping = {"h": "cpp", "cpp": "h"}
+    return name . '.' . get(mapping, extension, "")
+endfunction
+
+
+noremap <silent> ga :<C-U><C-R>=printf("Leaderf file --input %s", Alternative())<CR><CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " YCM Plugin
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -245,3 +258,10 @@ let g:gen_tags#statusline = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 let NERDSpaceDelims = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" lens Plugin
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+let g:lens#width_resize_max = 140
+nnoremap <F12> :call lens#run()<CR>
