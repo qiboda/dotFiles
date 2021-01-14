@@ -37,6 +37,9 @@
 !/.cheat
 !/.cheat/*
 
+!/.pip
+!/.pip/pip.conf
+
 !/.config
 /.config/*
 !/.config/nvim
