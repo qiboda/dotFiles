@@ -75,6 +75,8 @@ bindsym $mod+h split h
 # split in vertical orientation
 bindsym $mod+v split v
 
+bindsym $mod+t split toggle
+
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 
@@ -82,6 +84,7 @@ bindsym $mod+f fullscreen toggle
 bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
+bindsym $mod+x layout toggle all
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -176,16 +179,22 @@ bindsym $mod+r mode "resize"
 #}
 
 # Custom Key
-bindsym $mod+plus exec "amixer -c 0 set Master,0 playback 5%+"
-bindsym $mod+minus exec "amixer -c 0 set Master,0 playback 5%-"
+bindsym XF86AudioRaiseVolume exec "amixer -c 0 set Master,0 playback 5%+"
+bindsym XF86AudioLowerVolume exec "amixer -c 0 set Master,0 playback 5%-"
 #bindsym XF86AudioRaiseVolume exec "amixer -c 0 set Master,0 playback 5%+"
 #bindsym XFYou can define gaps either globally or per workspace using the following syntax. Note that the gaps86AudioLowerVolume exec "amixer -c 0 set Master,0 playback 5%-"
 
+
+#assign [class="Firefox"] $ws2
+#assign [class="Clion"] $ws3
+
 # use polybar instead of i3status
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always --no-startup-id lantern -headless
 exec_always --no-startup-id picom -b # --experimental-backends -i 0.7 -e 0.7 -m 0.8  
 exec_always --no-startup-id gnome-power-manager
+exec --no-startup-id lantern -headless
+# exec i3-msg 'workspace 9:9; exec alacritty -e cmus'
+# exec i3-msg 'workspace 1:1; exec alacritty'
 
 # focus to window under the mouse
 focus_follows_mouse no
