@@ -47,6 +47,8 @@ Plug 'lilydjwg/fcitx.vim'
 Plug 'camspiers/animate.vim'
 Plug 'camspiers/lens.vim'
 
+Plug 'kassio/neoterm'
+
 " Initialize plugin system
 call plug#end()
 
@@ -211,8 +213,13 @@ let g:neoformat_cpp_uncrustify = {
         \ 'stderr': 1,
         \ 'replace': 1,
         \ }
+" let g:neoformat_c_clangformat = {
+            " \ 'exe': 'clang-format',
+            " \ 'args': ['-style=file'],
+            " \ }
 let g:neoformat_enabled_c = ['uncrustify']
 let g:neoformat_enabled_cpp = ['uncrustify']
+" let g:neoformat_enabled_cpp = ['clangformat']
 
 let g:neoformat_python_autopep8 = {
         \ 'exe': 'autopep8',
@@ -265,3 +272,9 @@ let NERDSpaceDelims = 1
 
 let g:lens#width_resize_max = 140
 nnoremap <F12> :call lens#run()<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Neoterm Plugin
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:neoterm_default_mod = 'botright'
+let g:neoterm_autoinsert = 1
