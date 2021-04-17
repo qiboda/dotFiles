@@ -12,3 +12,6 @@ rofi
 
 # 状态栏
 polybar
+
+# 文件管理器
+nautilus

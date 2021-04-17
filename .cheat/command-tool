@@ -54,3 +54,4 @@ unzip-iconv: 使用 -O cp936 参数可以解决中文乱码问题。
 renderdoc: OpenGL 调试工具。
 screenfetch: 打印电脑基本配置信息
 alacritty: rust语言写的终端工具
+Xarchiver: archiving tools
