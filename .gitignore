@@ -18,8 +18,7 @@
 !/.profile
 
 !/bin
-/bin/ydcv
-/bin/ue4
+/bin/*
 
 !/.urxvt
 /.urxvt/*
@@ -38,7 +37,12 @@
 !/.cheat/*
 
 !/.pip
+/.pip/*
 !/.pip/pip.conf
+
+!/.cargo
+/.cargo
+!/.cargo/config
 
 !/.config
 /.config/*
@@ -51,7 +55,7 @@
 !/.config/alacritty
 !/.config/alacritty/*
 !/.config/yay
-!/.config/yay/*
+/.config/yay/*
 !/.config/polybar
 !/.config/polybar/*
 !/.config/fontconfig
