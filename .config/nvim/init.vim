@@ -10,9 +10,9 @@ Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
 Plug 'w0rp/ale'
 
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --rust-completer'}
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
+"Plug 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 
-Plug 'jsfaint/gen_tags.vim'
+"Plug 'jsfaint/gen_tags.vim'
 
 Plug 'flazz/vim-colorschemes'
 Plug 'octol/vim-cpp-enhanced-highlight'
